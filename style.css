@@ -1,8 +1,16 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f0f0f0;
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Protest Riot', cursive;
+	background-image: url('/img/background.jpg'); /* Replace 'background.jpg' with your image path */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .container {
@@ -11,8 +19,8 @@ body {
 }
 
 h1 {
-	color: #ff4081; /* Pink color */
 	font-size: 36px;
+	color: #fff;
 }
 
 canvas {
@@ -27,16 +35,18 @@ canvas {
 button {
 	background-color: #ff4081; /* Pink color */
 	color: white;
+	font-weight: bold;
 	border: none;
 	padding: 10px 20px;
 	font-size: 20px;
 	cursor: pointer;
 	border-radius: 5px;
 	margin-top: 20px;
+	font-family: 'Protest Riot', cursive;
 }
 
 .gift-image {
-	background-image: url('gift.jpg');
+	background-image: url('/img/gift.jpg');
 	background-size: cover; /* Ensure the image covers the container */
 	background-repeat: no-repeat; /* Prevent image from repeating */
 	width: 300px; /* Set a fixed width */
@@ -48,5 +58,5 @@ button {
 	right: 0;
 	transform: translateY(-50%);
 	z-index: -1; /* Ensure the image stays behind other content */
-  display: none;
+	display: none;
 }
